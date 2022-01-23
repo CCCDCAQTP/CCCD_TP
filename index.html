@@ -230,7 +230,7 @@
           var arr = url.split('?');
 	  var arr1 = arr[1].toString().split('&');
           var url = script_url+"?action=url&" + arr1[0];
-//alert(url);
+alert(url);
           var slag;
           $.getJSON(url, function (json) {
   	     slag = json.records.map(doc => Object.values(doc));
