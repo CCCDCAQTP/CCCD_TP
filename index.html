@@ -214,6 +214,7 @@
           
           
           var url = script_url+"&action=info";
+	  alert(url);
           $.getJSON(url, function (json) {
   	     slag1 = json.records.map(doc => Object.values(doc));
              //alert(slag1);   
