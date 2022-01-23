@@ -214,7 +214,7 @@
           
           
           var url = script_url+"?action=info";
-	  alert(url);
+	  //alert(url);
           $.getJSON(url, function (json) {
   	     slag1 = json.records.map(doc => Object.values(doc));
              //alert(slag1);   
@@ -228,7 +228,7 @@
        
        function getURL() {
           var url = window.location.href;
-	  var url ="http://ccdcaqtp.github.io/CCCD_TP/?CCCD_TP"
+	  //var url ="http://ccdcaqtp.github.io/CCCD_TP/?CCCD_TP"
           var arr = url.split('?');
 	  var arr1 = arr[1].toString().split('&');
 	  if (arr1.length>1) {
