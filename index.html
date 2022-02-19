@@ -227,7 +227,9 @@
        }
        
        function getURL() {
-          var url = window.location.href;
+          var url1 = window.location.href;
+	  var urlArr = url1.split('&');
+	  var url = urlArr[0];
 	  //var url ="http://ccdcaqtp.github.io/CCCD_TP/?CCCD_TP"
           var arr = url.split('?');
 	  var arr1 = arr[1].toString().split('&');
